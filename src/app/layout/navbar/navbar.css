@@ -6,6 +6,8 @@
   padding: 10px 20px;
   background-color: #fff;
   border: 2px solid #ccc;
+  margin: 0 auto;
+  font-family: cursive;
 }
 
 /* Logo */
@@ -20,7 +22,6 @@
 }
 
 .navbar .logo span {
-  font-family: 'Arial', sans-serif;
   font-weight: bold;
   font-size: 24px;
   color: #333;
@@ -41,7 +42,7 @@
   text-decoration: none;
   font-size: 16px;
   color: #1e90ff;
-  font-family: 'Arial', sans-serif;
+  font-family: cursive;
   text-transform: uppercase;
 }
 
