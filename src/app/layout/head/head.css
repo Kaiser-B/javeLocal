@@ -1,0 +1,60 @@
+/* General Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4C9EE2;
+  color: white;
+}
+
+.left-section, .right-section {
+  display: flex;
+  align-items: center;
+  margin-left:15px;
+}
+
+.contact-info, .social-icon {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.contact-info i, .social-icon i {
+  margin-right: 5px;
+}
+
+.separator {
+  color: white;
+  margin: 0 10px;
+}
+
+.right-section {
+  background-color: #2E4A80;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.cart-info, .user-info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.cart-info i, .user-info i {
+  margin-right: 5px;
+}
+
+.cart-info span, .user-info span {
+  font-size: 14px;
+}
+
+/* Hover Effects for Icons */
+.contact-info:hover, .social-icon:hover {
+  opacity: 0.8;
+}
+
+.cart-info:hover, .user-info:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,89 @@
+/* Estilo general para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+/* Logo */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 40px; /* Tamaño del logo */
+  margin-right: 10px;
+}
+
+.navbar .logo span {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Menú principal */
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .menu li {
+  position: relative;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1e90ff;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar .menu a:hover {
+  color: #333;
+}
+
+/* Menú desplegable */
+.navbar .dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+.navbar .dropdown-menu li {
+  padding: 10px;
+}
+
+.navbar .dropdown-menu a {
+  color: #333;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Icono de búsqueda */
+.navbar .search {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Flecha para el dropdown */
+.navbar .dropdown a span {
+  font-size: 12px;
+  margin-left: 5px;
+}
