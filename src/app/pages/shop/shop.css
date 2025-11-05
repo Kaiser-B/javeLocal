@@ -1,0 +1,79 @@
+.shop {
+  background-color: #f5f9ff;
+  padding: 2rem;
+  text-align: center;
+  font-family: cursive;
+  color: #2E4A80;
+}
+
+.shop__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2E4A80;
+}
+
+.shop__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #2E4A80;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #4C9EE2;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4C9EE2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2E4A80;
+}
+
+@media (max-width: 768px) {
+  .shop__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .shop__grid {
+    grid-template-columns: 1fr;
+  }
+}

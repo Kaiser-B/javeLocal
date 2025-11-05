@@ -1,0 +1,109 @@
+:host {
+  display: block;
+  width: 100%;
+  font-family: cursive;
+  color: white;
+}
+
+/* --- Contenedor principal --- */
+.footer {
+  background-color: #4C9EE2; /* azul claro */
+  color: white;
+  padding: 1rem 2rem 0.5rem;
+}
+
+/* --- Parte superior --- */
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+/* --- Logo --- */
+.footer__logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0;
+}
+
+/* --- Navegación --- */
+.footer__nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer__nav a:hover {
+  opacity: 0.8;
+}
+
+/* --- Parte inferior --- */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0.5rem auto 0;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+}
+
+.footer__copy p {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* --- Redes sociales --- */
+.footer__redes {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer__redes a {
+  color: white;
+  font-size: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4C9EE2; /* azul claro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.footer__redes a:hover {
+  background-color: white;
+  color: #2E4A80;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
